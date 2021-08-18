@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import  {HeaderArea} from './styled';
+import { HeaderArea } from './styled';
 
 import { isLogged, doLogout } from '../../../helpers/AuthHandler';
 
-const Header = ()=>{
+const Header = () => {
     let logged = isLogged();
 
-    const handleLogout = ()=>{
+    const handleLogout = () => {
         doLogout();
         window.location.href = '/';
     }
 
-    return(
+    return (
         <HeaderArea>
             <div className="container">
                 <div className="logo">
@@ -30,10 +30,10 @@ const Header = ()=>{
                                     <Link to="/my-account">Minha Conta</Link>
                                 </li>
                                 <li>
-                                     <button onClick={handleLogout}>Sair</button>
+                                    <button onClick={handleLogout}>Sair</button>
                                 </li>
                                 <li>
-                                     <Link to="/post-an-ad" className="button">Poste um anúncio</Link>
+                                    <Link to="/post-an-ad" className="button">Poste um anúncio</Link>
                                 </li>
                             </>
                         }
@@ -42,11 +42,11 @@ const Header = ()=>{
                                 <li>
                                     <Link to="/signin">Login</Link>
                                 </li>
-                                 <li>
-                                     <Link to="/signup">Cadastrar</Link>
+                                <li>
+                                    <Link to="/signup">Cadastrar</Link>
                                 </li>
                                 <li>
-                                     <Link to="/signin" className="button">Poste um anúncio</Link>
+                                    <Link to="/signin" className="button">Poste um anúncio</Link>
                                 </li>
                             </>
                         }

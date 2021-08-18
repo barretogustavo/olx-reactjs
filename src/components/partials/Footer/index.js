@@ -1,10 +1,11 @@
 import React from 'react';
-import  {FooterArea} from './styled';
+import { FooterArea } from './styled';
 
-const Footer = ()=>{
-    return(
+const Footer = () => {
+    return (
         <FooterArea>
-            ...
+            Todos os direitos reservados<br/>
+            OLX Clone B7Web
         </FooterArea>
     );
 }
